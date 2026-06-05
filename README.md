@@ -25,7 +25,7 @@ Die Dokumentation ist verfügbar unter: [https://oscat-building.readthedocs.io](
 
 ```bash
 pip install -r docs/requirements.txt
-mkdocs serve
+mkdocs serve -f docs/en/mkdocs.yml  # or: mkdocs serve -f docs/de/mkdocs.yml
 ```
 
 ## Lizenz
