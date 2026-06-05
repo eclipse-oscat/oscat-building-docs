@@ -7,11 +7,12 @@
 
   SPDX-License-Identifier: EPL-2.0
 -->
-# OSCAT Building Documentation
 
-Dieses Repository enthält die Dokumentation für die **OSCAT Building Library**.
+# OSCAT Building Dokumentation
 
-Die Dokumentation ist verfügbar unter: [https://oscat-building.readthedocs.io](https://oscat-building.readthedocs.io)
+Willkommen zur Dokumentation der OSCAT Building Library! ([Dokumentation als PDF herunterladen](pdf/document.pdf))
+
+Diese Bibliothek enthält Funktionsbausteine für Gebäudeautomation, Heizung, Lüftung, Klima (HLK), Jalousiesteuerung und Elektroinstallation.
 
 ## Kategorien
 
@@ -21,13 +22,6 @@ Die Dokumentation ist verfügbar unter: [https://oscat-building.readthedocs.io](
 - **electrical** - Elektroinstallation und Schaltungen
 - **Other** - Sonstige Funktionen
 
-## Lokale Entwicklung
-
-```bash
-pip install -r docs/requirements.txt
-mkdocs serve
-```
-
 ## Lizenz
 
-Eclipse Public License 2.0
+Diese Dokumentation steht unter der [Eclipse Public License 2.0](https://www.eclipse.org/legal/epl-2.0/).
