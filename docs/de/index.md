@@ -10,7 +10,7 @@
 
 # OSCAT Building Dokumentation
 
-Willkommen zur Dokumentation der OSCAT Building Library! ([Dokumentation als PDF herunterladen](pdf/document.pdf))
+Willkommen zur Dokumentation der OSCAT Building Library! ([Dokumentation als PDF herunterladen](https://eclipse-oscat.github.io/oscat-building-docs/de/pdf/document.pdf))
 
 Diese Bibliothek enthält Funktionsbausteine für Gebäudeautomation, Heizung, Lüftung, Klima (HLK), Jalousiesteuerung und Elektroinstallation.
 
