@@ -1,4 +1,6 @@
 docs_dir: .
+repo_url: https://github.com/eclipse-oscat/oscat-building-docs
+edit_uri: edit/main/docs/de/
 extra:
   alternate:
   - lang: de
@@ -24,6 +26,8 @@ theme:
   - navigation.expand
   - search.suggest
   - search.highlight
+  - content.action.edit
+  - content.action.view
   language: de
   name: material
   palette:
