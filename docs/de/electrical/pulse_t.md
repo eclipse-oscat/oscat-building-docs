@@ -21,4 +21,4 @@
 | | Das folgende Zeitdiagramm zeigt einen Eingangsimpuls der länger als T1 anliegt und den Ausgang Q der dem Eingang folgt. Anschließend wird am Eingang IN ein kurzer Puls (kürzer als T1) erzeugt und der Ausgang bleibt aktiv bis Ihn ein weiterer Impuls an IN wieder löscht. Ein weiterer kurzer Impuls am Eingang IN setzt den Ausgang auf TRUE bis dieser nach Ablauf der Zeit T2 selbsttätig gelöscht wird. |
 
 ![pulse_t](pulse_t.gif)
-![pulse_t timing](pulse_t timing.gif)
+![pulse_t_timing](pulse_t_timing.gif)

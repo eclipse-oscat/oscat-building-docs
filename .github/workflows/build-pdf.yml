@@ -1,0 +1,78 @@
+name: Build and Publish PDF
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: latest
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f docs/requirements.txt ]; then
+            pip install -r docs/requirements.txt
+          elif [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: "Compile PDF (OSCAT Building Dokumentation - de)"
+        run: |
+          python merge_docs.py docs/de/mkdocs.yml
+          pandoc docs/de/combined.md -o docs/de/book.typ --from commonmark_x --to typst --wrap=none
+          sed -i 's|\[//|[/#h(0pt)/|g' docs/de/book.typ
+          (echo '#let horizontalrule = line(length: 100%, stroke: 0.5pt + luma(150))'; echo '#let blockquote = quote.with(block: true)') | cat - docs/de/book.typ > temp && mv temp docs/de/book.typ
+          mkdir -p site/de/pdf
+          typst compile docs/de/main.typ site/de/pdf/document.pdf
+
+      - name: "Compile PDF (OSCAT Building Documentation - en)"
+        run: |
+          python merge_docs.py docs/en/mkdocs.yml
+          pandoc docs/en/combined.md -o docs/en/book.typ --from commonmark_x --to typst --wrap=none
+          sed -i 's|\[//|[/#h(0pt)/|g' docs/en/book.typ
+          (echo '#let horizontalrule = line(length: 100%, stroke: 0.5pt + luma(150))'; echo '#let blockquote = quote.with(block: true)') | cat - docs/en/book.typ > temp && mv temp docs/en/book.typ
+          mkdir -p site/en/pdf
+          typst compile docs/en/main.typ site/en/pdf/document.pdf
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

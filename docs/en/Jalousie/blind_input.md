@@ -65,9 +65,9 @@
 | X | L | L | L | - | L | L | X | - | - | Manual operation standby until timeout expires |
 | X | * 4 | L | L | - | H | L | X | - | - | CLICK_EN = TRUE |
 | X | L | * 4 | L | - | L | H | X | - | - | CLICK_EN = TRUE |
-| - | * 2 | L | L | - | H | H | - | / D1 | - | D1_TOGGLE = TRUE |
+| - | * 2 | L | L | - | H | H | - | /D1 | - | D1_TOGGLE = TRUE |
 | - | * 2 | L | L | - | H | H | - | * 3 | - | D1_TOGGLE = FALSE |
-| - | L | * 2 | L | - | H | H | - | - | / D2 | D2_TOGGLE = TRUE |
+| - | L | * 2 | L | - | H | H | - | - | /D2 | D2_TOGGLE = TRUE |
 | - | L | * 2 | L | - | H | H | - | - | * 3 | D2_TOGGLE = FALSE |
 | *1   in transition in the automatic mode, the outputs PO and AO are set to the last value of POS and AN.*2   Double click*3   Output pulse for one cycle*4   Single click, is blind moves in one direction for MAX_RUNTIME*5  angle and position are not transferred if the variable MASTER_MODE = TRUE. |
 

@@ -23,3 +23,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Typst & Pandoc artifacts
+*combined.md
+*book.typ
+*img/downloaded/

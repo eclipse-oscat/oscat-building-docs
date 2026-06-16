@@ -20,4 +20,4 @@
 | **Die folgende Grafik verdeutlicht die Funktionsweise des Bausteins** |  |
 
 ![sw_reconfig](sw_reconfig.gif)
-![sw_reconfig timing](sw_reconfig timing.gif)
+![sw_reconfig_timing](sw_reconfig_timing.gif)

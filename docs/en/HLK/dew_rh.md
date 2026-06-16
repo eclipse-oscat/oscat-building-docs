@@ -20,4 +20,4 @@
 | | See also the modules DEW_CON and DEW_TEMP. |
 
 ![dew_rh](dew_rh.gif)
-![dew_rh%20sample](dew_rh%20sample.gif)
+![dew_rh_sample](dew_rh_sample.gif)

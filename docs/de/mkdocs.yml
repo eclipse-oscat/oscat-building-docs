@@ -1,49 +1,12 @@
-site_name: OSCAT Building Dokumentation
-site_url: https://oscat-building.readthedocs.io
-theme:
-  name: material
-  language: de
-  palette:
-  - scheme: default
-    primary: indigo
-    accent: indigo
-    toggle:
-      icon: material/brightness-7
-      name: Switch to dark mode
-  - scheme: slate
-    primary: indigo
-    accent: indigo
-    toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
-  features:
-  - navigation.sections
-  - navigation.expand
-  - search.suggest
-  - search.highlight
-plugins:
-  - search
-  - to-pdf:
-      author: OSCAT
-      copyright: OSCAT
-      cover: true
-      toc_title: Inhaltsverzeichnis
-      toc_level: 3
-
 docs_dir: .
-
 extra:
   alternate:
-    - name: Deutsch
-      link: /de/latest/
-      lang: de
-    - name: English
-      link: /en/latest/
-      lang: en
-
-# Auto-generated navigation from folder structure
-# nav:
-# - Home: de/index.md
+  - lang: de
+    link: /de/latest/
+    name: Deutsch
+  - lang: en
+    link: /en/latest/
+    name: English
 markdown_extensions:
 - attr_list
 - md_in_html
@@ -51,3 +14,28 @@ markdown_extensions:
 - fenced_code
 - toc:
     permalink: true
+plugins:
+- search
+site_name: OSCAT Building Dokumentation
+site_url: https://oscat-building.readthedocs.io
+theme:
+  features:
+  - navigation.sections
+  - navigation.expand
+  - search.suggest
+  - search.highlight
+  language: de
+  name: material
+  palette:
+  - accent: indigo
+    primary: indigo
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - accent: indigo
+    primary: indigo
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode

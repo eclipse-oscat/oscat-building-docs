@@ -21,4 +21,4 @@
 | | The following chart shows the input pulse that applies to T1 longer and the output Q follows the input. Then, at input IN a short pulse (less than T1) is generated and the output remains active until a further pulse to IN resets it again. Another short pulse at the input IN sets the output to TRUE, until it will be deleted automatically after the expiry of the time T2. |
 
 ![pulse_t](pulse_t.gif)
-![pulse_t%20timing](pulse_t%20timing.gif)
+![pulse_t_timing](pulse_t_timing.gif)

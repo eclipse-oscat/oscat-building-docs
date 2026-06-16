@@ -20,4 +20,4 @@
 | | Siehe hierzu auch die Bausteine DEW_CON und DEW_TEMP. |
 
 ![dew_rh](dew_rh.gif)
-![dew_rh sample](dew_rh sample.gif)
+![dew_rh_sample](dew_rh_sample.gif)

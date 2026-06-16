@@ -20,4 +20,4 @@
 | **The following chart illustrates the operation of the module** |  |
 
 ![sw_reconfig](sw_reconfig.gif)
-![sw_reconfig%20timing](sw_reconfig%20timing.gif)
+![sw_reconfig_timing](sw_reconfig_timing.gif)

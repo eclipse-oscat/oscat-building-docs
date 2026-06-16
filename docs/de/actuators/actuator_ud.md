@@ -31,6 +31,8 @@
 | **2** | YDN kann nicht gesetzt werden weil YUP_IN TRUE ist. | |
 | | Mit den Config Variablen TON und TOFF kann eine Mindeste Einschaltzeit und eine Mindeste Totzeit zwischen 2 Ausgangsimpulsen definiert werden um das Schalten großer Motoren oder Getriebe die ein An und Auslaufen benötigen zu ermöglichen. | |
 
+![actuator_ud](actuator_ud.png)
+
 | Manual | UP | DN | ON | UD | OFF | YUP | YDN | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 0 | 0 | - | - | 0 | 0 | 0 | 102 |
