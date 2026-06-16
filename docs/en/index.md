@@ -10,7 +10,7 @@
 
 # OSCAT Building Documentation
 
-Welcome to the OSCAT Building Library documentation! ([Download documentation as PDF](https://eclipse-oscat.github.io/oscat-building-docs/en/pdf/document.pdf))
+Welcome to the OSCAT Building Library documentation! ([Download documentation as PDF](https://eclipse-oscat.github.io/oscat-building-docs/en/pdf/oscat-building-docs-en.pdf))
 
 This library contains function blocks for building automation, HVAC (heating, ventilation, air conditioning), blind/shutter control, and electrical installation.
 
