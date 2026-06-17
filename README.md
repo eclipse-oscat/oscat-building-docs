@@ -13,6 +13,11 @@ Dieses Repository enthält die Dokumentation für die **OSCAT Building Library**
 
 Die Dokumentation ist verfügbar unter: [https://oscat-building.readthedocs.io](https://oscat-building.readthedocs.io)
 
+- [📄 PDF Deutsch (oscat-building-docs-de.pdf)](https://eclipse-oscat.github.io/oscat-building-docs/de/pdf/oscat-building-docs-de.pdf)
+- [📄 PDF English (oscat-building-docs-en.pdf)](https://eclipse-oscat.github.io/oscat-building-docs/en/pdf/oscat-building-docs-en.pdf)
+- [GitHub Repository](https://github.com/eclipse-oscat/oscat-building-docs)
+
+
 ## Kategorien
 
 - **HLK** - Heizung, Lüftung, Klimatechnik
