@@ -56,7 +56,7 @@ jobs:
           path: |
             docs/de/img/downloaded
             docs/en/img/downloaded
-          key: downloaded-images-${{ runner.os }}-${{ hashFiles('docs/de/**/*.md', 'docs/en/**/*.md') }}
+          key: downloaded-images-${{ runner.os }}-${{ hashFiles('merge_docs.py', 'docs/de/**/*.md', 'docs/en/**/*.md') }}
           restore-keys: |
             downloaded-images-${{ runner.os }}-
 
