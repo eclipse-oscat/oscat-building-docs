@@ -19,8 +19,10 @@ mkdocs:
   configuration: docs/en/mkdocs.yml
 
 python:
-   install:
-   - requirements: docs/requirements.txt
+  install:
+    - method: uv
+      command: pip
+      requirements: docs/requirements.txt
 
 # formats:
 #   - pdf
