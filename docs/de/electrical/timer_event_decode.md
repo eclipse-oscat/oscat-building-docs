@@ -11,12 +11,12 @@
 ## Type	Funktion
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	EVENT** | STRING (Event Zeichenkette) |
 | **LANG** | INT (Sprachauswahl) |
 | **OUTPUT** | TIMER_EVENT |
 | | TIMER_EVENT_DECODE erlaubt die Programmierung von Timer Ereignissen mittels Zeichenkette anstelle des Ladens der Struktur TIMER_EVENT. |
-| **Die Ereignisse werden wie folgt spezifiziert** |  |
+| **Die Ereignisse werden wie folgt spezifiziert** | |
 | | <Typ;Kanal;Day;Start;Dauer;Land;Lor> |
 | | Das Feld DAY hat je nach Typ des Ereignisses verschiedenen Bedeutung und kann auch mit Wochentagen als Text oder einer Liste von Wochentagen spezifiziert werden. Der Eingang LANG spezifiziert die zu verwendende Sprache, 0 = die im Setup eingestellt Default Sprache, 1 = Englisch, .... nähere Infos zu Sprachen siehe im Kapitel Datentypen. |
 
@@ -24,7 +24,7 @@
 
 | Element | Beschreibung | Formate |
 | --- | --- | --- |
-| < > | Start und Stopp Zeichen des Datensatzes. |  |
+| < > | Start und Stopp Zeichen des Datensatzes. | |
 | Typ | Typ des Ereignisses (siehe Beschreibung in TIMER_P4) | '123', 2#0101, 8#33, 16#FF |
 | Kanal | zu programmierender Kanal | '123', 2#0101, 8#33, 16#FF |
 | Day | Auswahlnummer z.B. Tag | '123', 2#0101, 8#33, 16#FF, 'Mo''MO,DI,DO' |

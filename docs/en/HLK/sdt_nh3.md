@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (temperature in °C) |
 | **Output** | REAL (saturation vapor pressure in Pa) |
 | | SDT_NH3 calculates the saturation temperature for ammonia (NH3). The pressure P is given in Celsius. The scope of the function is 0.001 bar to 60 bar. |

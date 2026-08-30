@@ -11,7 +11,7 @@
 ## HEAT_TEMP
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	T_EXT** | REAL (Außentemperatur) |
 | **T_INT** | REAL (Soll Raumtemperatur) |
@@ -28,7 +28,7 @@
 | **T_DIFF_C** | REAL (Vor- Rücklaufdifferenz 10°C) |
 | **C** | REAL (Konstante des Heizsystems, DEFAULT = 1,33) |
 | **H** | REAL (Schwelle für Heizungsanforderung 3°C) |
-| **HEAT_TEMPberechnet die Vorlauftemperatur aus der Außentemperatur nach folgender Formel** |  |
+| **HEAT_TEMPberechnet die Vorlauftemperatur aus der Außentemperatur nach folgender Formel** | |
 | | TY =  TR + T_DIFF / 2 * TX + (TY_Setup - T_DIFF / 2 - TR) * TX ^ (1 / C) |
 | **mit** | TR = T_INT + OFFSET |
 | **TX** | = (TR - T_EXT) / (T_INT_Setup - T_EXT_Setup); |
@@ -39,7 +39,7 @@
 | **Rohre** | C = 1.25 |
 | **Fußbodenheizung** | C = 1.1 |
 | | Je größer der Wert von C, desto stärker ist die Heizkurve gekrümmt. Ein Wert von 1.0 ergibt eine Gerade als Heizkurve.  Typische Heizsysteme liegen zwischen 1.0 und 1.5. |
-| **Die Grafik zeigt Heizkurven für Auslegungstemperaturen von 30 – 80 °C Vorlauftemperatur bei -20°C Außentemperatur und bei einem C von 1.33** |  |
+| **Die Grafik zeigt Heizkurven für Auslegungstemperaturen von 30 – 80 °C Vorlauftemperatur bei -20°C Außentemperatur und bei einem C von 1.33** | |
 
 ![heat_temp](heat_temp.gif)
 ![heat_temp_kurve](heat_temp_kurve.gif)

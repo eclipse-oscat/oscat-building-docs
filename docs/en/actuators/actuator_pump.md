@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Control signal for pump) |
 | **MANUAL** | BOOL (Manual control signal) |
 | **RST** | BOOL (reset signal) |

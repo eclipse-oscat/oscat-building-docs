@@ -11,7 +11,7 @@
 ## PULSE_T
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	IN** | BOOL (Eingangspuls) |
 | **T1** | TIME (Minimalzeit) |

@@ -11,7 +11,7 @@
 ## CLICK_MODE
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	IN** | BOOL (Steuereingang für Taster) |
 | **Output	SINGLE** | BOOL (Ausgang für einfachen Tastendruck) |

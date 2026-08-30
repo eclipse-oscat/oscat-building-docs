@@ -11,12 +11,12 @@
 ## Type	 Function
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	EVENT** | STRING (  Event  string) |
 | **LANG** | INT (language) |
 | **OUTPUT** | TIMER_BOOK |
 | | TIMER_EVENT_DECODE allows the programming of  Timer  Events using string instead of loading the structure TIMER_EVENT. |
-| **The events are specified as follows** |  |
+| **The events are specified as follows** | |
 | | <Typ;Kanal; Day  , Start, duration, country, Lor> |
 | | Field Day has, depending on the type of event different meanings and can also be specified with week as a text or a list of the week. The input LANG specifies the used language, 0 = the default language set in the setup  , 1 = english, .... more info about languages, see the section data types. |
 
@@ -24,7 +24,7 @@
 
 | Element | Description | Formats |
 | --- | --- | --- |
-| < > | Start and stop characters of the record. |  |
+| < > | Start and stop characters of the record. | |
 | Type | Type of event (as described in TIMER_P4) | '123', 2#0101, 8#33, 16#FF |
 | Channel | to be programmed channel | '123', 2#0101, 8#33, 16#FF |
 | Day | Selection number eg Day | '123', 2#0101, 8#33, 16#FF, 'Mo''MO, DI, DO' |

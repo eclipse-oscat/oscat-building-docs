@@ -11,7 +11,7 @@
 ## ACTUATOR_3P
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function module |
 | **Input	IN** | BYTE (input control signal 0 - 255) |
 | **TEST** | BOOL (module processes diagnostics if TRUE) |
@@ -33,11 +33,11 @@
 | | A flap is usually moved up and down to set different volume flows. The more a flap moves, the more it deviates from the ideal absolute position, because with every move a small position error and is added up over many movements. To prevent this error with the setup variables T_CAL after a defined period (The accumulated time of all flap movements), a calibration can be performed automatically. With this calibration the motor moves in the zero position and the flap is then returned to the value specified by IN. A value of T#0s for CAL_RUNTIME means that no automatic calibration is carried out. |
 | | When calibration and diagnostics without limit for adding a full motion, the time T_EXT runtime T_RUN to ensure that reached its final position without the flap limit switch safely. |
 | | At the output POS of the module, the current flap position is simulated by set the time T_RUN. At this output can also be determined, when the flap has reached the position requested the input. If the input TEST = TRUE, the device performs a diagnostic cycle. With the external variable ARX any modules communicate with each other and ensure for the self-diagnostic cycles (after power on) to do not run parallel. The user thereby determines how many and which modules are connected to the same variable and thus can be tuned. If a module is connected to an own variable ARX, no coordination of the diagnostic cycles is done. More information about the inputs TEST, ARE and ARX can be read at module Autorun. |
-| **Status messages the module** |  |
+| **Status messages the module** | |
 
 ![actuator_3p](actuator_3p.gif)
 
-| STATUS |  | ARE | ARX |
+| STATUS | | ARE | ARX |
 | --- | --- | --- | --- |
 | 100 | Normal operation | - | - |
 | 101 | Calibration | - | - |

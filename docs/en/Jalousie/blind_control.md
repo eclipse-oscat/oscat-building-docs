@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	UP** | BOOL (Input UP) |
 | **DN** | BOOL (input DOWN) |
 | **S_IN** | BYTE (ESR compliant status input) |
@@ -34,7 +34,7 @@
 ![blind_control](blind_control.gif)
 ![blind_control_sample1](blind_control_sample1.gif)
 
-| UP | DN | PI | AI | MU | MD |  |
+| UP | DN | PI | AI | MU | MD | |
 | --- | --- | --- | --- | --- | --- | --- |
 | L | L | - | - | L | L | no action |
 | H | L | - | - | H | L | shutter moves up |

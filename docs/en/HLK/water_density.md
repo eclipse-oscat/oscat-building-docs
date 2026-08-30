@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (temperature of the water) |
 | **SAT** | BOOL (TRUE, if the water is saturated with air) |
 | **Output** | REAL (water density in grams / liter) |

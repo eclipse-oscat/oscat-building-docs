@@ -11,7 +11,7 @@
 ## TANK_LEVEL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function module |
 | **Input	LEVEL** | BOOL (input for level sensor) |
 | **LEAK** | BOOL (input for leak sensors) |

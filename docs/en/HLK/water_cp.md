@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (water temperature in °C) |
 | **Output** | REAL (Specific heat capacity at temperature T) |
 | | WATER_CP calculates the specific heat capacity of liquid water as a function of temperature at atmospheric pressure. The calculation is valid in the temperature range from 0 to 100 degrees Celsius and is calculated in joules / (gram * kelvin). The temperature T is given in Celsius. |

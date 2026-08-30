@@ -11,7 +11,7 @@
 ## LEGIONELLA
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	MANUAL** | BOOL (Manual Start Input) |
 | **TEMP_BOILER** | REAL (Boiler Temperatur) |
@@ -34,13 +34,13 @@
 | **TP_0 .. 7** | TIME (Desinfektionszeit für Kreise 0..7) |
 | | LEGIONELLA hat eine integrierte Schaltuhr, die an einem bestimmten Wochentag (DAY) zu einer bestimmten Tageszeit (T_START) die Desinfektion startet. Hierzu ist die externe Anschaltung der Lokalzeit nötig (DT_IN). Jederzeit kann mit einer steigenden Flanke an MANUAL die Desinfektion auch von Hand gestartet werden. |
 | | Der Ablauf eines Desinfektionszyklus wird mit einem internen Start aufgrund von DT_IN, DAY und T_START, oder durch eine steigende Flanke an MANUAL gestartet.  Der Ausgang HEAT wird TRUE und steuert die Heizung des Boilers an. Innerhalb der Aufheizzeit T_MAX_HEAT muss dann das Eingangssignal TEMP_BOILER auf TRUE gehen. Wird die Temperatur nicht innerhalb von T_MAX_HEAT gemeldet, geht der Ausgang Status auf Störung. Die Desinfektion läuft aber trotzdem weiter. Nach der Aufheizphase wird die Boilertemperatur gemessen und falls nötig durch TRUE am Ausgang HEAT wieder nachgeheizt. Sobald die Boilertemperatur erreicht ist, wird PUMP TRUE und die Zirkulationspumpe eingeschaltet. Dann werden nacheinander die einzelnen Ventile geöffnet und gemessen, ob innerhalb der Zeit T_MAX_RETURN die Temperatur am Rücklauf der Zirkulationsleitung erreicht wurde. Falls ein Rückflussthermometer nicht vorhanden ist, kann der Eingang T_MAX_RETURN einfach offen bleiben. |
-| **Der Ausgang Status ist ESR kompatibel und kann folgende Meldungen abgeben** |  |
+| **Der Ausgang Status ist ESR kompatibel und kann folgende Meldungen abgeben** | |
 | **110** | Wartestellung 111	Sequenz läuft |
 | **1** | Boiler Temperatur wurde nicht erreicht |
 | **2** | Rücklauftemperatur bei Ventil0 wurde nicht erreicht |
 | **3..8** | Rücklauftemperatur bei Ventil1..7 wurde nicht erreicht |
-| **Schematischer interner Aufbau von LEGIONELLA** |  |
-| **Das Folgende Beispiel zeigt eine Simulation für 2 Desinfektionskreise mit Traceaufzeichnung. In diesem Aufbau ist VALVE2 auf den Eingang RST geschaltet und unterbricht damit die Sequenz nach 2 Kreisen** |  |
+| **Schematischer interner Aufbau von LEGIONELLA** | |
+| **Das Folgende Beispiel zeigt eine Simulation für 2 Desinfektionskreise mit Traceaufzeichnung. In diesem Aufbau ist VALVE2 auf den Eingang RST geschaltet und unterbricht damit die Sequenz nach 2 Kreisen** | |
 
 ![legionella](legionella.gif)
 ![legionella_schema](legionella_schema.gif)

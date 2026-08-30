@@ -11,7 +11,7 @@
 ## TANK_LEVEL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	LEVEL** | BOOL (Eingang für Niveau Sensor) |
 | **LEAK** | BOOL (Eingang für Leck Sensoren) |

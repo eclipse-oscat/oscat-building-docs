@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN1..6** | BOOL (push button inputs) |
 | **Output	Qx** | BOOL (switch outputs) |
 | **Setup	T_DEBOUNCE** | TIME (debounce time for buttons) |

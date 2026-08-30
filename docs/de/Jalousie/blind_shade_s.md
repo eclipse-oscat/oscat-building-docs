@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input 	UP** | BOOL (Eingang AUF) |
 | **DN** | BOOL (Eingang AB) |
 | **S_IN** | BYTE (ESR kompatibler Status Eingang) |
@@ -35,7 +35,7 @@
 | **Für die Winkel HORZ1 und HORZ2 gilt** | 90° = Osten, 180° = Süden, 270° = Westen. |
 | | SHADE_DELAY verhindert, dass bei Teilbewölkung die Jalousie dauernd auf und ab fährt. |
 | | Über den Eingang ALERT, kann auf einfache Weise erreicht werden, dass das Rollo z.B. bei geöffneter Tür ganz nach oben fährt. Der ALERT Eingang hat im Baustein höchste Priorität, erzwingt STATUS = 152 unabhängig von den Eingängen und setzt QU = TRUE, QD = FALSE, führt also einen manual UP durch. |
-| **Innerhalb einer Rollosteuerung kann BLIND_SHADE z.B. wie folgt eingesetzt werden** |  |
+| **Innerhalb einer Rollosteuerung kann BLIND_SHADE z.B. wie folgt eingesetzt werden** | |
 | **Setup	SUNRISE_OFFSET** | TIME (Delay bei Sonnenaufgang) [T#1h] |
 | **SUNSET_PRESET** | TIME (Delay bei Sonnenuntergang) [T#1h] |
 | **SHADE_DELAY** | TIME (Delay der Beschattung) [T#60s] |

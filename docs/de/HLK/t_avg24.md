@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	TS** | INT (Außentemperatur Sensor) |
 | **DTI** | DT (Datum und Tageszeit) |
 | **RST** | BOOL (Reset) |

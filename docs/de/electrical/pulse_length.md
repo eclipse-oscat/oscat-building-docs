@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Eingangspuls) |
 | **Output	SHORT** | BOOL (Puls wenn IN < T_SHORT) |
 | **MIDDLE** | BOOL (Puls wenn IN =< T_LONG und IN >= T_SHORT) |

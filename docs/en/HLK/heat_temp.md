@@ -11,7 +11,7 @@
 ## HEAT  _TEMP
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function module |
 | **Input	T_EXT** | REAL (TAT) |
 | **T_INT** | REAL (nominal room temperature) |
@@ -28,7 +28,7 @@
 | **T_DIFF_C** | REAL (forward / reverse differential 10°C) |
 | **C** | REAL (constant of the heating system, DEFAULT = 1.33) |
 | **H** | REAL (threshold requirement for heating 3°C) |
-| **HEAT_TEMP  calculates  the flow temperature of the outside temperature by the following formula** |  |
+| **HEAT_TEMP  calculates  the flow temperature of the outside temperature by the following formula** | |
 | | TY =  TR + T_DIFF / 2 * TX + (TY_Setup - T_DIFF / 2 - TR) * TX ^ (1 / C) |
 | **with** | TR = T_INT + OFFSET |
 | **TX** | = (TR - T_EXT) / (T_INT_Setup - T_EXT_Setup); |
@@ -39,7 +39,7 @@
 | **Pipes** | C = 1.25 |
 | **Floor heating** | C = 1.1 |
 | | The larger the value of C, the stronger the heating curve is curved. A value of 1.0 gives a straight line as the heating curve.   Typical heating systems are between 1.0 and 1.5. |
-| **The graph shows  Heating curves  for the design temperatures of 30 - 80°C flow temperature at -20 ° C outside temperature and at a C of 1.33** |  |
+| **The graph shows  Heating curves  for the design temperatures of 30 - 80°C flow temperature at -20 ° C outside temperature and at a C of 1.33** | |
 
 ![heat_temp](heat_temp.gif)
 ![heat_temp_kurve](heat_temp_kurve.gif)

@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	I1** | BYTE (Steuersignal 1) |
 | **IS** | BOOL (Eingangs Auswahl) |
 | **I2** | BYTE (Steuersignal 2) |

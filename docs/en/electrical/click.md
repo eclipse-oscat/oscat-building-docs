@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (control input for buttons) |
 | **Output	Q** | BOOL (output) |
 | **SINGLE** | BOOL (output for simple key press) |
@@ -34,7 +34,7 @@ Example 1 shows an application of CLICK with three subsequent dimming modules. A
 
 Example 2 shows CLICK with a dimmer, and behaves like a dimmer without CLICK, however, a short double-click sets the output of the dimmer at 100% and a triple-click is as an additional switching output available.
 
-| Status |  |
+| Status | |
 | --- | --- |
 | 110 | Inactive input |
 | 111 | Output SINGLE activated |

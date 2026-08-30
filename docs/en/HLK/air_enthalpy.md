@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (air temperature) |
 | **RH** | REAL (Relative humidity of the air) |
 | **Output** | (Enthalpy of air in J/g) |

@@ -11,7 +11,7 @@
 ## BUILDING_VERSION
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	Funktion** | DWORD |
 | **Input	IN** | BOOL (wenn TRUE liefert der Baustein das Release Datum) |
 | **Output** | (Version der Bibliothek) |

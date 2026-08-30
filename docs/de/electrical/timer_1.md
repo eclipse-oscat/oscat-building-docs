@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	E** | BOOL (Enable Eingang) |
 | **DTI** | DATE_TIME (Datum Zeit Eingang) |
 | **START** | TOD (Startzeit) |

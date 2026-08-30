@@ -11,7 +11,7 @@
 ## ACTUATOR_3P
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	IN** | BYTE (Eingang Steuersignal 0 - 255) |
 | **TEST** | BOOL (Baustein führt Diagnose aus wenn TRUE) |
@@ -33,11 +33,11 @@
 | | Eine Klappe wird Üblicherweise Auf und Ab bewegt um verschiedene Volumenströme einzustellen. Je mehr sich eine Klappe bewegt, desto mehr weicht sie von einer idealen absoluten Position ab, weil bei jeder Bewegung ein kleiner Positionsfehler auftritt und sich über viele Bewegungen addiert. Um diesem Fehler entgegen zu Wirken kann mit der Setup Variablen T_CAL nach einer definierten Laufzeit (aufaddierte Zeit aller Klappenbewegungen) der Klappe eine Kalibrierung automatisch durchgeführt werden. Bei dieser Kalibrierung fährt der Motor in Nullstellung und stellt die Klappe anschließend wieder auf den durch IN spezifizierten Wert. Ein Wert von T#0s für die CAL_RUNTIME bedeutet, dass keine automatische Kalibrierung durchgeführt wird. |
 | | Bei Kalibrierung und Diagnose ohne Endschalter wird für eine volle Bewegung die Zeit T_EXT zur Laufzeit T_RUN addiert um sicherzustellen das die Klappe seine Endposition auch ohne Endschalter sicher erreicht. |
 | | Am Ausgang POS simuliert der Baustein die aktuelle Klappenstellung mittels der eingestellten Zeit T_RUN. An diesem Ausgang kann auch festgestellt werden wann die Klapp die am Eingang angeforderte Stellung erreicht hat. Wird der Eingang TEST = TRUE gesetzt führt der Baustein einen Diagnosezyklus durch. Über die externe Variable ARX kommunizieren mehrere Bausteine miteinander und sorgen selbständig dafür das Diagnosezyklen nach dem Einschalten nacheinander und nicht Parallel ausgeführt werden. Der Anwender legt dabei fest wie viele und welche Bausteine an die gleiche Variable geschaltet werden und sich dadurch abstimmen können. Wird jeder Baustein an eine eigenen Variable ARX geschaltet erfolgt keine koordination der Diagnosezyklen. Weitere Informationen zu den Eingängen TEST, ARE und ARX ist beim Baustein Autorun nachzulesen. |
-| **Statusmeldungen des Bausteins** |  |
+| **Statusmeldungen des Bausteins** | |
 
 ![actuator_3p](actuator_3p.gif)
 
-| STATUS |  | ARE | ARX |
+| STATUS | | ARE | ARX |
 | --- | --- | --- | --- |
 | 100 | Normal operation | - | - |
 | 101 | Calibration | - | - |

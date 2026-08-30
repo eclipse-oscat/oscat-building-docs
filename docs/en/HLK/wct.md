@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (outdoor temperature in ° C) |
 | **V** | REAL (Wind speed in km/h) |
 | **Output** | REAL (wind chill temperature) |

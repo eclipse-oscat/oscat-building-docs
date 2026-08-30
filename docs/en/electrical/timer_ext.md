@@ -11,7 +11,7 @@
 ## TIMER_EXT
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function  module |
 | **Input	ENA** | BOOL (module  enable  ) |
 | **ON** | BOOL ( forces the output Q to TRUE) |

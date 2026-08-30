@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	SET** | BOOL (input for switching the output to 100%) |
 | **IN** | BOOL (control input for buttons) |
 | **RST** | BOOL (entrance to switch of the output) |

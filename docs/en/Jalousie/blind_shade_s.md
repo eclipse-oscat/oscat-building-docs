@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input 	UP** | BOOL (Input UP) |
 | **DN** | BOOL (input DOWN) |
 | **S_IN** | BYTE (ESR compliant status input) |
@@ -35,7 +35,7 @@
 | **For the angle HORZ1 and HORZ2 is valid** | 90° = East, 180° = South, 270° = West. |
 | | SHADE_DELAY prevents a permanent up and down move when partly cloud cover the blinds. |
 | | With the input ALERT for example, can be achieved (in a simple manner) that the roller blind goes up when the door opens. The ALERT input has the highest priority in the module, forces STATUS = 152 independent of the inputs and sets QU = TRUE, FALSE = QD, drives therefore manually UP. |
-| **Within a blind control the BLIND_SHADE are used as follows** |  |
+| **Within a blind control the BLIND_SHADE are used as follows** | |
 | **Setup	SUNRISE_OFFSET** | TIME (Delay at sunrise) [T#1h] |
 | **SUNSET_PRESET** | TIME (Delay at sunset) [T#1h] |
 | **SHADE_DELAY** | TIME (Delay of shading) [T#60s] |

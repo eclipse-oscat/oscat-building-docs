@@ -11,7 +11,7 @@
 ## TIMER_2
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | function module |
 | **Input	DT_IN** | DATE_TIME (date time input) |
 | **START_TIME** | TOD (start time) |

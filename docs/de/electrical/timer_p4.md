@@ -11,7 +11,7 @@
 ## TIMER_P4
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	DTIME** | DATE_TIME (Datum Zeit Eingang) |
 | **TREF_0** | TOD (Referenzzeit 0) |
@@ -28,18 +28,18 @@
 | **STATUS** | BYTE (ESR kompatibler Status Ausgang) |
 | | TIMER_P4 ist ein universell programmierbarer Timer der ein Fülle von Möglichkeiten bietet. Neben Ereignissen zu festen Zeiten können auch Ereignisse in Abhängigkeit von externen Zeiten wie zum Beispiel Sonnen- Auf oder Sonnen- Untergang programmiert werden. Zusätzlich zur zeitlichen Programmierung können alle Ausgänge flexibel mit logischen Eingängen verknüpft werden. Mit maximal 63 unabhängig programmierbaren Ereignissen stehen dem Anwender praktisch unbegrenzte Möglichkeiten zur Verfügung. |
 | | Die Programmierung des Timers erfolgt über ein ARRAY[0..63] OF TIMER_EVENT. Es können dabei beliebig viele Ereignisse je Kanal und auch überlappende Ereignisse Erzeugt werden. |
-| **Die Datenstruktur TIMER_EVENT enthält folgende Felder** |  |
+| **Die Datenstruktur TIMER_EVENT enthält folgende Felder** | |
 | | Im Datenfeld CHANNEL wird der für das Ereignis relevante Kanal spezifiziert, falls mehrere Kanäle gleichzeitig geschaltet werden sollen müssen je Kanal separate Ereignisse programmiert werden. Der TYP des Ereignisses legt fest welche Art von Ereignis programmiert werden soll, siehe hierzu die Übersicht in der folgenden Tabelle. DAY legt entweder als Bitmaske die Wochentage (Bit7 = MO, BIT0 = SO) fest, oder den Tag im Monat / Jahr oder eine je nach Ereignistyp definierte andere Nummer beziehungsweise Anzahl. START ist die jeweilige Anfangszeit (TIMEOFDAY) des Ereignisses, bei Ereignissen in Abhängigkeit einer externen Zeit kann START auch eine Zeitverschiebung definieren. Die Dauer legt unabhängig vom Typ des Ereignisses fest wie lange das Ereignis andauert. Wurde ein Ereignis gestartet merkt sich der Timer in der Datenstruktur den jeweiligen Tag so dass jedes Ereignis maximal einmal pro Tag gestartet wird. Sollen mehrere Ereignisse je Tag und Kanal definiert werden, können diese durch mehrere unabhängige Ereignisse programmiert werden. LAND und LOR definieren Logische Masken für zusätzliche Logische Verknüpfungen, eine detaillierte Beschreibung der möglichen Zustandsverknüpfungen findet sich weiter unten im Text. |
 | | Der Timer hat einen zusätzlichen manuellen Eingang der es erlaubt Ausgänge Manuell zu überschreiben. Wenn MAN = TRUE ist werden die 4 untersten Bits des Eingangs MI auf die Ausgänge Q geschaltet. Der Eingang ENQ ist ein Freigabeeingang und muss für normalen Betrieb auf TRUE stehen, wird ENQ auf FALSE gestellt, bleiben alle Ausgänge auf FALSE. Der Baustein kann jederzeit mittels des asynchronen Eingangs RST zurückgesetzt werden, dabei werden alle laufenden Ereignisse gelöscht. Der Eingang OFS wird nur dann benützt wenn mehrere TIMER Bausteine kaskadiert werden, der WERT an OFS legt dann fest welche Kanalnummer der erste Ausgang des Bausteins hat. Wird OFS beispielsweise auf 4 gesetzt so reagiert der entsprechende Baustein nicht mehr auf die Kanalnummern 0..3 sondern auf die Kanäle 4..7. Somit lassen sich mehrere Bausteine einfach kaskadieren. |
 | | Der Ausgang STATUS ist ein ESR kompatibler Status Ausgang der die Betriebszustände des Bausteins meldet. |
 | | STATUS = 100 (Der Baustein ist disabled, ENQ = FALSE) |
 | | STATUS = 101 (Handbetrieb, MAN = TRUE) |
 | | STATUS = 102 (automatischer Betrieb) |
-| **Das folgende Beispiel zeigt 2 kaskadierte Timer** |  |
-| **Blockschaltbild des Timers** |  |
+| **Das folgende Beispiel zeigt 2 kaskadierte Timer** | |
+| **Blockschaltbild des Timers** | |
 | | Tritt ein programmiertes Ereignis ein so wird der entsprechende Timer des Angesprochenen Kanals mit der vordefinierten Zeitdauer gestartet. Der Kanalausgang kann durch logisches UND mit bis zu 4 Eingängen L0..L3 verknüpft werden, es werden dabei nur die Eingänge verknüpft die in der Ereignismaske LAND mit einer 1  Definiert sind. enthält die Maske LAND keine 1 (2#00000000) dann wird kein Eingang mit dem Ausgang verknüpft. Enthält die Maske LAND zum Beispiel 2#00001001) dann wird das Ausgangssignal des Timers mit den Logischen Eingängen L0 und L3 per AND verknüpft. Der Ausgang wird in diesem Fall nur Dann TRUE wenn sowohl ein Ereignis den Timer gestartet hat und gleichzeitig auch L0 und L3 TRUE sind. Nach der UND Verknüpfung kann der Ausgang noch zusätzlich mit beliebigen logischen Eingängen in der selben Weise mittels der Maske LOR OR verknüpft werden. |
-| **Folgende Ereignisse können Programmiert werden** |  |
-| **Ereignistypen** |  |
+| **Folgende Ereignisse können Programmiert werden** | |
+| **Ereignistypen** | |
 | | 1. tägliches Ereignis |
 | | bei einem täglichen Ereignis wird lediglich Kanalnummer, Startzeit und Dauer des Ereignisses Programmiert. Das Feld DAY hat keine Bedeutung. |
 | | 2. Ereignis an selektierten Wochentagen |
@@ -108,7 +108,7 @@
 | 43 | Ereignis an Werktagen | - | Anfangszeit | Dauer |
 | 50 | Ereignis nach externer Zeit | 0,1 | Offset | Dauer |
 | 51 | Ereignis vor externer Zeit | 0,1 | -Offset | Dauer |
-| 52 | Ausgang zu Zeit + Offset setzen | 0,1,2 | Offset |  |
-| 53 | Ausgang zu Zeit + Offset löschen | 0,1,2 | Offset |  |
-| 54 | Ausgang zu Zeit - Offset setzen | 0,1,2 | Offset |  |
-| 55 | Ausgang zu Zeit - Offset löschen | 0,1,2 | Offset |  |
+| 52 | Ausgang zu Zeit + Offset setzen | 0,1,2 | Offset | |
+| 53 | Ausgang zu Zeit + Offset löschen | 0,1,2 | Offset | |
+| 54 | Ausgang zu Zeit - Offset setzen | 0,1,2 | Offset | |
+| 55 | Ausgang zu Zeit - Offset löschen | 0,1,2 | Offset | |

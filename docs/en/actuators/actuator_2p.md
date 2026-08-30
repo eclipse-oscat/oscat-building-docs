@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BYTE (control input 0 - 255) |
 | **TEST** | BOOL (starts autorun when TRUE) |
 | **ARE** | BOOL (enable for Autorun) |

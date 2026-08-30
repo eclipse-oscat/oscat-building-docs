@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T_EXT1** | REAL (Außentemperatur Sensor 1) |
 | **T_EXT2** | REAL (Außentemperatur Sensor 2) |
 | **T_EXT3** | REAL (Außentemperatur Sensor 3) |
