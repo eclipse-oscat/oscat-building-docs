@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (input signal from the switch or push button) |
 | **TD** | TIME (debounce) |
 | **PM** | BOOL (operation mode TRUE = pulse mode operation) |

@@ -11,7 +11,7 @@
 ## BUILDING_VERSION
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	Function** | DWORD |
 | **Input	IN** | BOOL (if TRUE the module provides the   release date) |
 | **Output** | (Version of the library) |

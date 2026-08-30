@@ -11,7 +11,7 @@
 ## SDD
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	 Function** | REAL |
 | **Input	T** | REAL (air temperature in ° C) |
 | **ICE** | BOOL (TRUE for air over ice and FALSE for air over |

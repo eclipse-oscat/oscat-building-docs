@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (Temperatur des Wassers) |
 | **SAT** | BOOL (TRUE, wenn das Wasser mit Luft gesättigt ist) |
 | **Output** | REAL (Dichte des Wassers in Gramm / Liter) |

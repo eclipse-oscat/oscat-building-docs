@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (Außentemperatur in °C) |
 | **V** | REAL (Windgeschwindigkeit in km/h) |
 | **Output** | REAL (Windchill Temperatur) |

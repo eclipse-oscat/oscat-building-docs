@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (Temperatur der Luft) |
 | **RH** | REAL (Relative Feuchte der Luft) |
 | **Output** | (Enthalpie der Luft in J/g) |

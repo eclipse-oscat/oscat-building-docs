@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (Temperatur in °C) |
 | **Output** | REAL (Sättigungsdampfdruck in Pa) |
 | | SDT_NH3 berechnet die Sättigungsdampftemperatur für Ammoniak (NH3). Der Druck P wird in °C angegeben. Der Gültigkeitsbereich der Funktion liegt bei 0.001 bar bis 60 bar. |

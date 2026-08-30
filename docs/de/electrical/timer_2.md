@@ -11,7 +11,7 @@
 ## TIMER_2
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	DT_IN** | DATE_TIME (Datum Zeit Eingang) |
 | **START_TIME** | TOD (Startzeit) |

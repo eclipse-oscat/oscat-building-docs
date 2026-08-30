@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	VC** | REAL (water vapor concentration in air, in grams / m³) |
 | **T** | REAL (temperature in °C) |
 | **Output** | REAL (Relative humidity in %) |

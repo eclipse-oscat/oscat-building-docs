@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Steuersignal für Pumpe) |
 | **MANUAL** | BOOL (Manuelles Steuersignal) |
 | **RST** | BOOL (Reset Signal) |

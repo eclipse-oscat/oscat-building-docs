@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Eingangssignal vom Schalter oder Taster) |
 | **TD** | TIME (Entprellzeit) |
 | **PM** | BOOL (Betriebsart TRUE = Impulsbetrieb) |

@@ -11,13 +11,13 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Taster Eingang) |
 | **TD** | TIME (Entprellzeit für den Eingang) |
 | **TR** | TIME (Rekonfigurationszeit) |
 | **Output	Q** | BOOL (Schaltausgang) |
 | | SW_RESetup ist ein intelligentes Taster Interface, es kann den Eingang entprellen und erkennt selbständig ob ein Öffner oder Schließer am Eingang IN angeschlossen ist. Wird am Eingang IN ein Öffner erkannt, so wird der Ausgang Q invertiert. Wird am Eingang IN ein Schalter angeschlossen, so erzeugt der Baustein bei jedem Zustandswechsel des Schalters einen Puls mit der Länge TR. TD ist die Entprellzeit und TR die Rekonfigurationszeit. immer Dann wenn der Eingang IN länger als die Rekonfigurationzeit in einem Zustand bleibt geht der Ausgang auf FALSE und wird somit beim nächsten Impuls an Eingang in einen High aktiven Impuls ausgeben. In der praktischen Installationstechnik kann dies von großem Vorteil sein wenn Schalter manchmal als Öffner und manchmal als Schließer angeschlossen sind. |
-| **Die folgende Grafik verdeutlicht die Funktionsweise des Bausteins** |  |
+| **Die folgende Grafik verdeutlicht die Funktionsweise des Bausteins** | |
 
 ![sw_reconfig](sw_reconfig.gif)
 ![sw_reconfig_timing](sw_reconfig_timing.gif)

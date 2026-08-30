@@ -11,7 +11,7 @@
 ## PULSE_T
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function module |
 | **Input	IN** | BOOL (input pulse) |
 | **T1** | TIME (minimum time) |

@@ -11,7 +11,7 @@
 ## SDD_NH3
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	 Function** | REAL |
 | **Input	T** | REAL (temperature in °C) |
 | **Output** | REAL (saturation vapor pressure in Pa) |

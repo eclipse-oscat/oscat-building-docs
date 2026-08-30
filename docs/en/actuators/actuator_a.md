@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	I1** | BYTE (control signal 1) |
 | **IS** | BOOL (input selection) |
 | **I2** | BYTE (control signal 2) |

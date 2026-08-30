@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	SET** | BOOL (Eingang zum Einschalten des Ausgangs auf 100%) |
 | **IN** | BOOL (Steuereingang für Taster) |
 | **RST** | BOOL (Eingang zum Ausschalten des Ausgangs) |

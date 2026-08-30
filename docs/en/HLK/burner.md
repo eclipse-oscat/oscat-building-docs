@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (control input) |
 | **Stage2** | BOOL (control input level 2) |
 | **OVER_TEMP** | BOOL (temperature limit of the boiler) |
@@ -43,14 +43,14 @@
 | **KW2** | REAL (burner output at level 2 in KW) |
 | | BURNER is a control interface for oil or gas burner operating at kilowatt hour meter and counter. The module controls a two-stage burner with optional fuel oil warming. The input IN is the control input that starts the burner only when the input OVER_TEMP is FALSE. OVER_TEMP is the boiler thermostat protection, which gets TRUE, if the boiler temperature has reached the maximum temperature. A burner start begins with the fuel oil warming, by PRE_HEAT gets TRUE. Then it waits for a signal at the input OIL_TEMP. If the signal OIL_TEMP is within the PRE_HEAT_TIME not TRUE and the oil temperature is not reached, the start sequence is interrupted and the output FAIL is set to TRUE. At the same time the error is spent at the Output STATUS. After fuel oil warming the motor gets on and sets the fan in operation. Then after a defined time the ignition is switched and the oil valve is opened. If no response of the flame sensor after specified time (SAFETY_TIME), the module shows a failure. A fault is signaled even if the flame sensor responds before the ignition. If after a successful ignition, the flame breaks off and the set-variable MULTIPLE_IGNITION = TRUE, immediately a ignition is started. A second stage is activated automatically after the time STAGE2_DELAY when the input  STAGE2 is TRUE. |
 | | If a fault occurs, then the module is locked for a fixed time LOCKOUT_TIME and only after this time a RST can start the operation again. During the LOCKOUT_TIME, the RST  Input  must be FALSE. A TRUE at input OVER_TEMP stops immediately every action and reports the error 9. |
-| **The status output indicates the current state of the module** |  |
+| **The status output indicates the current state of the module** | |
 | | 110 = Wait for Start signal ( Standby )  111 = startup sequence is executed 112 = burner runs on stage 1 113 = burner runs at stage 2 |
-| **A number of error conditions are provided at the output STATUS, if an error is present** |  |
+| **A number of error conditions are provided at the output STATUS, if an error is present** | |
 | | 1 = fuel oil warming has not responded within the PRE_HEAT_TIME 2 = flame sensor is active during fuel oil warming (PRE_HEAT_TIME) 3 = flame sensor is active during the aeration period (PRE_VENTILATION_TIME) 4 = safety time ( Safety_Time) was passed without a flame 5 = flame stops in operation 9 = boiler overheating contact has tripped |
-| **Trace recording of a normal boot sequence** |  |
+| **Trace recording of a normal boot sequence** | |
 | | The signal IN starts the sequence with the output PRE_HEAT. After reaching the oil temperature (OIL_TEMP = TRUE), the engine started and the PRE_VENTILATION_TIME (time from engine start until oil valve is open) awaited. After an adjustable time (PPR_IGNITION_TIME) before opening the oil valve, the ignition is turned on. The ignition is then on until the POST_IGNITION_TIME has expired. The operating time per stage is measured independently in seconds. |
-| **The following time diagram explains the various setup times and the sequence** |  |
-| **The timing diagram reflects the exact time line** |  |
+| **The following time diagram explains the various setup times and the sequence** | |
+| **The timing diagram reflects the exact time line** | |
 | | t1 = pre-heating (PRE_HEAT_TIME) |
 | | t2 = prepurge (PRE_VENT_Time) |
 | | t3 = pre ignition time (PRE_IGNITE_TIME) |
@@ -62,7 +62,7 @@
 ![burner_trace1](burner_trace1.gif)
 ![burner_trace2](burner_trace2.gif)
 
-| IN | overtemp | Oiltemp | Flame | Rst | motor | Oilcoil | Preheat | ignite | Status | fail |  |
+| IN | overtemp | Oiltemp | Flame | Rst | motor | Oilcoil | Preheat | ignite | Status | fail | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | - | - | 0 | 0 | 0 | 0 | 0 | 110 | 0 | Wait mode |
 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 111 | 0 | fuel oil warming period |

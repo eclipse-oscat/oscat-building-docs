@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (input pulse) |
 | **Output	SHORT** | BOOL(pulse if IN < T_SHORT) |
 | **MIDDLE** | BOOL (pulse if IN =< T_LONG and IN >= T_SHORT) |

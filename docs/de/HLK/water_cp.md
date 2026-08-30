@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (Temperatur des Wassers in °C) |
 | **Output** | REAL (Spezifische Wärmekapazität bei der Temperatur T) |
 | | WATER_CP berechnet die spezifische Wärmekapazität von flüssigem Wassers in Abhängigkeit von der Temperatur bei Normaldruck. Die Berechnung ist gültig im Temperaturbereich von 0 bis 100 Grad Celsius und wird in Joule / (Gramm * Kelvin) errechnet. Die Temperatur T wird in °C angegeben. |

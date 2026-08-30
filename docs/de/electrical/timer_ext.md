@@ -11,7 +11,7 @@
 ## TIMER_EXT
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Funktionsbaustein |
 | **Input	ENA** | BOOL (Baustein Enable, default TRUE!) |
 | **ON** | BOOL (zwingt den Ausgang Q auf TRUE) |
@@ -24,7 +24,7 @@
 | **HOLIDAY** | BOOL (Eingang für Feiertagsmodul) |
 | **Output	Q** | BOOL (Schaltausgang) |
 | **Status** | BYTE (ESR kompatibler Status Ausgang) |
-| **TIMER_EXT ist ein Timer speziell für Außenbeleuchtungen oder andere Verbraucher, die während der Dämmerung geschaltet werden sollen. Der Ausgang Q kann zu festen Tageszeiten ein-/ausgeschaltet werden, zusätzlich können Zeitspannen festgelegt werden, zu denen Q vor der Dämmerung ein- und nach der Dämmerung automatisch wieder ausgeschaltet wird. Ein zusätzlicher Eingang SWITCH schaltet den Ausgang unabhängig von der Tageszeit ein/aus. Die Eingänge ENA, ON, OFF und MAN erlauben eine ausführliche automatische und manuelle Steuerung des Ausgangs. Die folgende Tabelle gibt detaillierte Informationen über die Betriebszustände des Bausteins** |  |
+| **TIMER_EXT ist ein Timer speziell für Außenbeleuchtungen oder andere Verbraucher, die während der Dämmerung geschaltet werden sollen. Der Ausgang Q kann zu festen Tageszeiten ein-/ausgeschaltet werden, zusätzlich können Zeitspannen festgelegt werden, zu denen Q vor der Dämmerung ein- und nach der Dämmerung automatisch wieder ausgeschaltet wird. Ein zusätzlicher Eingang SWITCH schaltet den Ausgang unabhängig von der Tageszeit ein/aus. Die Eingänge ENA, ON, OFF und MAN erlauben eine ausführliche automatische und manuelle Steuerung des Ausgangs. Die folgende Tabelle gibt detaillierte Informationen über die Betriebszustände des Bausteins** | |
 | **Die Setup Variablen ENABLE_SUNDAY, SATURDAY und HOLIDAY definieren die Aktivität des Bausteins an Samstagen, Sonntagen und Feiertagen. Sollen Feiertage durch diesen Baustein berücksichtigt werden, muss am Eingang HOLIDAY der Baustein HOLIDAY aus der Bibliothek angeschlossen werden. Dieser Baustein signalisiert mit einem TRUE, dass der aktuelle Tag  ein Feiertag ist. Die Setup Variablen T_SET_START, T_SET_STOP, T_RISE_START, T_RISE_STOP, T_DAY_START und T_DAY_STOP legen die Schaltzeiten fest. Ein T#0s bzw. TOD#00** | 00 als übergebener Wert deaktiviert die jeweilige  Schaltzeit. Das bedeutet, dass z.B. T_SET_START (Einschaltzeitspanne vor Sonnenuntergang) nur dann einschaltet, wenn sie auf mindestens 1 Sekunde (T#1s) eingestellt ist. Der Baustein schaltet zum Zeitpunkt T_DAY_START den Ausgang Q ein und zum Zeitpunkt T_DAY_STOP wieder aus. Steht eine der beiden Zeiten (T_DAY_START oder T_DAY_STOP) auf TOD#00:00, wird der entsprechende Schaltvorgang nicht ausgeführt. Der Baustein schaltet die Zeitspanne T_RISE_START vor Sonnenaufgang (SUN_RISE) ein und  die Zeitspanne T_RISE_STOP nach Sonnenaufgang wieder aus. Gleiches gilt für die Zeiten zum Sonnenuntergang. |
 | **Setup	T_DEBOUNCE** | TIME (Entprellzeit für den Eingang SWITCH) |
 | **T_RISE_START** | TIME (Einschaltzeit vor Sonnenaufgang) |

@@ -11,7 +11,7 @@
 ## SDD_NH3
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	Funktion** | REAL |
 | **Input	T** | REAL (Temperatur in °C) |
 | **Output** | REAL (Sättigungsdampfdruck in Pa) |

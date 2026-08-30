@@ -11,7 +11,7 @@
 ## DIMM_I
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Typ** | Funktionsbaustein |
 | **Eingang SET** | BOOL (Eingang zum Schalten des Ausgangs auf VAL) |
 | | VAL BYTE (Wert für die SET-Operation) |
@@ -35,14 +35,14 @@
 | | Beim Ein- und Ausschalten bleibt der letzte Ausgangswert des Dimmers am Ausgang OUT erhalten; nur ein FALSE am Ausgang Q schaltet das Licht aus, und ein TRUE an Q schaltet die Lampe wieder ein. Bei einem kurzen Tastendruck begrenzt das Modul den Ausgang OUT auf mindestens MIN_ON und maximal MAX_ON. Wenn der Dimmer zum Beispiel auf 0 steht, setzt das Gerät den Ausgang OUT automatisch auf 50 (Vorgabe MIN_ON) und umgekehrt wird der Ausgang OUT, wenn er höher als MAX_ON ist, auf MAX_ON begrenzt. |
 | **Diese Parameter sollen verhindern, dass nach dem Einschalten ein sehr kleiner Wert am Ausgang OUT anliegt und Q aktiv ist, obwohl kein Licht leuchtet. Durch den Parameter MIN_ON wird ein Mindesthelligkeitswert beim Einschalten definiert. Umgekehrt wird zum Beispiel** | im Schlafzimmer durch MAX_ON verhindert, dass das Licht sofort nach dem Einschalten mit voller Helligkeit leuchtet. Wenn der Parameter SOFT_DIMM auf TRUE gesetzt ist, startet das Dimmen beim Einschalten mit einem langen Tastendruck jedes Mal bei 0. Zusätzlich zur Dimmerfunktion wird ein Doppelklick am Eingang IN dekodiert und der Ausgang DBL für einen Zyklus auf TRUE gesetzt. Wenn die Setup-Variable DBL_TOGGLE auf TRUE gesetzt ist, wird der Ausgang DBL bei jedem Doppelklick invertiert. |
 | | Der Ausgang DBL kann verwendet werden, um zusätzliche Lasten oder Ereignisse mit einem Doppelklick zu schalten. Der Ausgang DBL kann auf den Eingang SET geschaltet werden, sodass der Dimmer durch einen Doppelklick auf einen vordefinierten Wert VAL gesetzt wird. OUT ist der Wert des Dimmers und ist als externe I/O-Variable definiert. Dies hat den Vorteil, dass der Dimmwert jederzeit extern geändert werden kann und auch nach einem Stromausfall rekonstruiert werden kann. OUT kann auf Wunsch remanent (retentive) und persistent definiert werden. |
-| **Die folgende Tabelle zeigt den Betriebsstatus des Dimmers** |  |
+| **Die folgende Tabelle zeigt den Betriebsstatus des Dimmers** | |
 
 ![dimm_i](dimm_i.gif)
 
 | IN | SET | RST | Q | DIR | DBL | OUT |
 | --- | --- | --- | --- | --- | --- | --- |
 | einfach | 0 | 0 | NOT Q | OUT<127 | - | LIMIT(MIN_ON,OUT,MAX_ON) |
-| doppelt | 0 | 0 | - | - | TOGPULSE |  |
+| doppelt | 0 | 0 | - | - | TOGPULSE | |
 | lang | 0 | 0 | ON | NOT DIR | - | Rampe auf oder ab abhängig von DIR; startet bei 0, wenn SOFT_DIMM = TRUE und Q = 0; Richtungsumkehr, wenn 0 oder 255 erreicht wird |
 | - | 1 | 0 | ON | OUT<127 | - | VAL |
 | - | 0 | 1 | OFF | UP | OFF | 0 wenn RST_OUT = TRUE |

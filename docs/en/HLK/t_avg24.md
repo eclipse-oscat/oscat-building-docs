@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	TS** | INT (external temperature sensor) |
 | **DTI** | DT (Date and time of day) |
 | **RST** | BOOL (Reset) |

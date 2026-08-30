@@ -11,11 +11,11 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (control signal) |
 | **Output	OUT** | BOOL (control signal for the pump) |
 | **STATUS** | BYTE (ESR compliant status output) |
-| **ACTUATOR_COIL is used to control simple valves. The output OUT follows the input signal IN. If the setup variable SELF_ACT_CYCLE  set to a value greater than 0, the valve is automatically activated for the duration of SELF_ACT_TIME if it was off for the time SELF_ACT_CYCLE. An ESR compliant status output indicates state changes of the valve for further processing or Data Logging. The status messages are defined as follows** |  |
+| **ACTUATOR_COIL is used to control simple valves. The output OUT follows the input signal IN. If the setup variable SELF_ACT_CYCLE  set to a value greater than 0, the valve is automatically activated for the duration of SELF_ACT_TIME if it was off for the time SELF_ACT_CYCLE. An ESR compliant status output indicates state changes of the valve for further processing or Data Logging. The status messages are defined as follows** | |
 | | STATUS = 100, Standby. |
 | | STATUS = 101, valve was activated by TRUE at the input IN. |
 | | STATUS = 102, valve was activated automatically. |

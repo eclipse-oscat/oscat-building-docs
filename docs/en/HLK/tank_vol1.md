@@ -11,7 +11,7 @@
 ## TANK_VOL1
 
 | | | |
-|:---|:---|:---|
+| :--- | :--- | :--- |
 | **Type	Function** | REAL | |
 | **Input	 TR** | REAL | (Radius of the tank) |
 | **TL** | REAL | (Length of the tank) |

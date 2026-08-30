@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BYTE (Steuereingang 0 - 255) |
 | **TEST** | BOOL (startet Autorun wenn TRUE) |
 | **ARE** | BOOL (Enable für Autorun) |

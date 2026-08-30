@@ -11,7 +11,7 @@
 ## Type	 Function  : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T** | REAL (temperature in °C) |
 | **RH** | REAL (Relative Humidity) |
 | **Output** | REAL (  Heat  Temperature Index) |

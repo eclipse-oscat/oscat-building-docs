@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN** | BOOL (Steuereingang für Taster) |
 | **Output	Q** | BOOL (Schaltausgang) |
 | **SINGLE** | BOOL (Ausgang für einfachen Tastendruck) |
@@ -34,7 +34,7 @@ Beispiel 1 zeigt eine Anwendung von CLICK mit 3 nachfolgenden Dimm Bausteinen. A
 
 Beispiel 2 zeigt CLICK mit einem Dimmer, wobei sich der Dimmer wie ein Dimmer ohne CLICK verhält, jedoch ein kurzer Doppelklick den Ausgang des Dimmers sofort auf 100% setzt und ein Dreifachklick als weiterer Schaltausgang zur Verfügung steht.
 
-| Status |  |
+| Status | |
 | --- | --- |
 | 110 | Eingang inaktiv |
 | 111 | Ausgang SINGLE aktiviert |

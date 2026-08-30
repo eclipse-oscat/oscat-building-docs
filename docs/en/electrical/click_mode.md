@@ -11,7 +11,7 @@
 ## CLICK_MODE
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | Function module |
 | **Input	IN** | BOOL (control input for buttons) |
 | **Output	SINGLE** | BOOL (output for simple key press) |

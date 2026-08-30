@@ -11,7 +11,7 @@
 ## DEW_CON
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type	 Function** | REAL |
 | **Input	RH** | REAL (Relative Humidity) |
 | **T** | REAL (temperature in °C) |

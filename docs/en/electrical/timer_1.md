@@ -11,7 +11,7 @@
 ## Type	 Function  module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	E** | BOOL (  Enable  Input) |
 | **DTI** | DATE_TIME (date time input) |
 | **START** | TOD(time of day) |

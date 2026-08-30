@@ -11,7 +11,7 @@
 ## TANK_VOL2
 
 | | | |
-|:---|:---|:---|
+| :--- | :--- | :--- |
 | **Type	Funktion** | REAL | |
 | **Input	TR** | REAL | (Radius des Tanks) |
 | **H** | REAL | (Füllhöhe des Tanks) |

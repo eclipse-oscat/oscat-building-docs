@@ -11,7 +11,7 @@
 ## TIMER_P4
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Type** | function  module |
 | **Input	DTIME** | DATE_TIME (date time input) |
 | **TREF_0** | TOD (reference time 0) |
@@ -28,18 +28,18 @@
 | **STATUS** | BYTE (  ESR compliant status output) |
 | | TIMER_P4 is a universal programmable  Timer  which has a lot of opportunities. In addition to events at fixed times, also events depending on external hours like sunrise or sunset can be programmed. In addition to the timing programm, all outputs can be linked flexible with logic inputs. Up to 63 independently programmable events  are possible, and the user has virtually unlimited possibilities. |
 | | The programming of the  Timers  are done via an ARRAY [0..63] OF TIMER_EVENT. It can thereby any number of events per channel and overlapping events can be generated. |
-| **The data structure TIMER_EVENT contains the following fields** |  |
+| **The data structure TIMER_EVENT contains the following fields** | |
 | | The data field is the CHANNEL specified for the relevant event channel, if multiple channels are to be switched simultaneously per channel must be programmed in separate events. The TYPE of event determines what type of event is to be programmed, see the overview in the following table. DAY defines either a bitmask days of the week (Bit7 = MO, bit0 = SO), or the day of the month/year or a defined another number or count depending on the event type. START is the start time (TIMEOFDAY) of the event, with events as a function of an external time  START can also define a time difference. The duration defines independent of the type of event, how long the event lasts. Was an event is started the timer remembers  in the data structure each day, so that each event is run at maximum once per day. If several events per day and channel are to be defined, they can be programmed independently by multiple events. LAND and LOR define logical masks for additional logical links, a detailed description of the possible state of links is provided below in the text. |
 | | The  Timer  has an additional manual input which allows to override outputs manually. If MAN = TRUE is the 4 lowest bits of the input MI are passed to the outputs Q. The input is an enable input and must be set to TRUE for normal operation, if ENQ is set to FALSE, all outputs remain at FALSE. The  Module can always be reset by means of the asynchronous input RST, here all running events are deleted. The input OFS is used only when more of the TIMER modules  are cascaded, the value of OFS then determines which channel number the first output of the module has. If OFS is set to 4 for example, so the modules does not response to the corresponding channel number 0..3 but to the channels 4..7. Thus, multiple devices are cascaded in a simple way. |
 | | The STATUS output is an ESR compliant status output which reports the operating states of the module. |
 | | STATUS = 100 (The module is  disabled  , ENQ = FALSE) |
 | | STATUS = 101 (manual operation, MAN = TRUE) |
 | | STATUS = 102 (automatic operation) |
-| **The following example shows two cascaded  timers** |  |
-| **Block diagram of the  timers** |  |
+| **The following example shows two cascaded  timers** | |
+| **Block diagram of the  timers** | |
 | | If a programmed event occurs then the corresponding  timer   of the selected channel is started with the pre-defined time period. The channel output can be linked by logical AND with up to 4 inputs L0..L3, only the inputs are associated, which are definded in the event mask LAND  with a 1 . contains the mask LAND  not a 1 (2#00000000) then no input is connected to the output.  If the mask LAND contains, for example 2#00001001) then the  output signal of  the Timer is linked with the logic inputs L0 and L3 by AND. The output in this case is only true if both an event the  Timer  has started and at the same time L0 and L3 are TRUE. After the AND link the output can be additionally connected to any logic inputs in the same manner using the mask LOR OR. |
-| **The following events can be programmed** |  |
-| **Event Types** |  |
+| **The following events can be programmed** | |
+| **Event Types** | |
 | | 1. daily event |
 | | at a daily event, only channel number, start time and duration of the event is programmed.  The field DAY has no meaning. |
 | | 2. Event on selected days of the week |
@@ -108,7 +108,7 @@
 | 43 | Event during the week | - | Start time | Duration |
 | 50 | External event after time | 0,1 | Offset | Duration |
 | 51 | Event before external time | 0,1 | -Offset | Duration |
-| 52 | Output to time+set offset | 0,1,2 | Offset |  |
-| 53 | Output to  time + offset delete | 0,1,2 | Offset |  |
-| 54 | output to time - set offset | 0,1,2 | Offset |  |
-| 55 | output to time - offset delete | 0,1,2 | Offset |  |
+| 52 | Output to time+set offset | 0,1,2 | Offset | |
+| 53 | Output to  time + offset delete | 0,1,2 | Offset | |
+| 54 | output to time - set offset | 0,1,2 | Offset | |
+| 55 | output to time - offset delete | 0,1,2 | Offset | |

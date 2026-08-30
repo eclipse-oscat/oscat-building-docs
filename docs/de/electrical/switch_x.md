@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	IN1..6** | BOOL (Taster Eingänge) |
 | **Output	Qx** | BOOL (Schaltausgänge) |
 | **Setup	T_DEBOUNCE** | TIME (Entprellzeit für Taster) |

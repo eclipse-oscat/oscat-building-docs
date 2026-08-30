@@ -11,7 +11,7 @@
 ## Type	Function module
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	T_EXT1** | REAL (external temperature sensor 1) |
 | **T_EXT2** | REAL (external temperature sensor 2) |
 | **T_EXT3** | REAL (external temperature sensor 3) |

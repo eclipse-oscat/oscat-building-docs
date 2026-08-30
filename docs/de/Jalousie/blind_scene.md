@@ -11,7 +11,7 @@
 ## Type	Funktionsbaustein
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	UP** | BOOL (Eingang AUF) |
 | **DN** | BOOL (Eingang AB) |
 | **S_IN** | BYTE (ESR kompatibler Status Eingang) |
@@ -30,14 +30,14 @@
 | **AO** | BYTE (Ausgangswert des Lamellenwinkels im b |
 | | Automatikbetrieb) |
 | | BLIND_SCENE speichert bis zu 16 Szenen bestehend aus jeweils aktueller Jalousiestellung und Winkel ab und kann diese Szenen bei Abruf wieder herstellen. jede einzelne Szene kann aktiv oder inaktiv sein, abhängig davon ob beim Speichern der Szene der Eingang ENABLE TRUE war oder nicht (ENABLE = TRUE bedeutet aktiv). Eine Szene wird abgerufen indem die Nummer der Szene ( 0 .. 15) am Eingang SCENE angelegt wird und gleichzeitig ENABLE auf TRUE gesetzt wird. Eine Szene kann nur dann abgerufen werden wenn die beiden Eingänge UP und DN gleichzeitig TRUE sind (Automatik Modus). Dadurch ist sichergestellt das eine aktive Szene immer von der Manuellen Betriebsart überschrieben wird. |
-| **Die folgende Tabelle verdeutlicht die Funktionsweise von BLIND_SCENE** |  |
+| **Die folgende Tabelle verdeutlicht die Funktionsweise von BLIND_SCENE** | |
 | | Der Eingang S_IN und der Ausgang STATUS sind ESR kompatible Aus und Eingänge , über den Eingang S_IN melden vorgeschaltete Bausteine Ihren Status an das Modul, dieser Status wird an den Ausgang STATUS weitergeleitet, und eigene Statusmeldungen werden über STATUS Ausgegeben. |
-| **Die folgende Grafik zeigt die Anwendung von BLIND_SCENE mit anderen Modulen zur Ansteuerung einer Jalousie** |  |
+| **Die folgende Grafik zeigt die Anwendung von BLIND_SCENE mit anderen Modulen zur Ansteuerung einer Jalousie** | |
 
 ![blind_scene](blind_scene.gif)
 ![blind_scene_sample](blind_scene_sample.gif)
 
-| UP | DN | ENABLE | SWRITE | SCENE | QU | QD | PO | AO |  |
+| UP | DN | ENABLE | SWRITE | SCENE | QU | QD | PO | AO | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 1 | 0 | 0 | - | 1 | 1 | PI | AI | no scene |
 | - | - | 1 | 1 | y | - | - | - | - | write scene number y |

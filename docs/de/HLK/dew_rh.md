@@ -11,7 +11,7 @@
 ## Type	Funktion : REAL
 
 | | |
-|:---|:---|
+| :--- | :--- |
 | **Input	VC** | REAL (Wasserdampfkonzentration in Luft in Gramm / m³) |
 | **T** | REAL (Temperatur in °C) |
 | **Output** | REAL (Relative Luftfeuchtigkeit in %) |
